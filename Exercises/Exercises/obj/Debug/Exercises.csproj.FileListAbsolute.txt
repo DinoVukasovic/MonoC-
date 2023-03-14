@@ -1,0 +1,8 @@
+C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Exercises\Exercises\bin\Debug\Exercises.exe.config
+C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Exercises\Exercises\bin\Debug\Exercises.exe
+C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Exercises\Exercises\bin\Debug\Exercises.pdb
+C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Exercises\Exercises\obj\Debug\Exercises.csproj.AssemblyReference.cache
+C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Exercises\Exercises\obj\Debug\Exercises.csproj.SuggestedBindingRedirects.cache
+C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Exercises\Exercises\obj\Debug\Exercises.csproj.CoreCompileInputs.cache
+C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Exercises\Exercises\obj\Debug\Exercises.exe
+C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Exercises\Exercises\obj\Debug\Exercises.pdb
