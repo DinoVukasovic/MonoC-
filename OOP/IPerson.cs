@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    internal class Program
+    public interface IPerson
     {
-        static void Main(string[] args)
-        {
+        string Name { get; set; }
+        string LastName { get; set; }
 
-        }
+
+        string GetAddress();
     }
 }

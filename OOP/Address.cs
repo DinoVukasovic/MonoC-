@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    internal class Program
+    public class Address
     {
-        static void Main(string[] args)
-        {
-
-        }
+        public string City { get; set; }
+        public string State {get; set;}
+        public string Zip { get; set; }
     }
 }
