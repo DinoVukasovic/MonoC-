@@ -90,7 +90,7 @@ namespace Hospital
             document.Dispose();
 
             Console.ReadLine();
-
+            // lines comments
         }
        
     }
