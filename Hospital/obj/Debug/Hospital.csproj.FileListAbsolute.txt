@@ -1,15 +1,8 @@
 C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\Hospital.exe.config
 C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\Hospital.exe
 C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\Hospital.pdb
-C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\PdfSharp.Charting.dll
-C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\PdfSharp.dll
-C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\PdfSharp.xml
-C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\PdfSharp.Charting.xml
-C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\de\PdfSharp.resources.dll
-C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\bin\Debug\de\PdfSharp.Charting.resources.dll
 C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\obj\Debug\Hospital.csproj.AssemblyReference.cache
 C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\obj\Debug\Hospital.csproj.SuggestedBindingRedirects.cache
 C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\obj\Debug\Hospital.csproj.CoreCompileInputs.cache
-C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\obj\Debug\Hospital.csproj.CopyComplete
 C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\obj\Debug\Hospital.exe
 C:\Users\Zera\Desktop\Mono\MonoC#FirstWeek\Hospital\obj\Debug\Hospital.pdb

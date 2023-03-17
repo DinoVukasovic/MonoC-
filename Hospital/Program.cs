@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing.Text;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,10 +14,11 @@ namespace Hospital
             // Creating a directory if it doesn't exist
             string dirLocation = @"C:\Users\Zera\Desktop\FileExercise";
 
-            if(!Directory.Exists(dirLocation))
+            if (!Directory.Exists(dirLocation))
             {
                 Directory.CreateDirectory(dirLocation);
-            } else
+            }
+            else
             {
                 Console.WriteLine("Directory exists :)");
             }
@@ -27,7 +26,7 @@ namespace Hospital
             //Storing file name and file location into strings
             string fileName = "file.txt";
             string fileLocation = $"{dirLocation}\\{fileName}";
-            
+
             //Creting a file if it doesn't exist
             if (!File.Exists(fileLocation))
             {
@@ -48,12 +47,12 @@ namespace Hospital
             }
 
             //Writing a text into a file
-            using (StreamWriter writer = new StreamWriter(fileLocation)) 
+            using (StreamWriter writer = new StreamWriter(fileLocation))
             {
                 writer.WriteLine("Bla bla lorem ipsum");
             }
-                     
-           
+
+
             //Reading the text from a txt file
             using (StreamReader reader = new StreamReader(fileLocation))
             {
@@ -69,15 +68,16 @@ namespace Hospital
                     sw.WriteLine("iz prvog teksta je ovo; " + sr.ReadLine());
                 }
             }
-            
 
-            
+
+
 
             Console.ReadLine();
 
 
 
         }
-       
+
     }
 }
+   
