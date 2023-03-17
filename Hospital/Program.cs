@@ -1,9 +1,12 @@
-﻿using System;
+﻿using PdfSharp.Drawing;
+using PdfSharp.Pdf;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Hospital
 {
@@ -61,6 +64,7 @@ namespace Hospital
 
             }
 
+            //read from file1 copy to file2
             using (StreamReader sr = new StreamReader(fileLocation))
             {
                 using (StreamWriter sw = new StreamWriter(sndFileLocation))
@@ -69,15 +73,26 @@ namespace Hospital
                 }
             }
 
+            //creating a new pdf document and writing in it
+            PdfDocument document = new PdfDocument();
+            PdfPage page = new PdfPage();
+            document.AddPage(page);
 
+            XGraphics gfx = XGraphics.FromPdfPage(page);
+            XImage image = XImage.FromFile("C:\\Users\\Zera\\Desktop\\FileExercise\\Kitty.jpg");
+            
+            XFont font = new XFont("Time New Roman", 14);
+            XPoint point = new XPoint(40, 40);
 
+            gfx.DrawString("Blablablalballblsbla", font, XBrushes.HotPink, point);
+            gfx.DrawImage(image, 50, 50, 250, 250);
+            document.Save("C:\\Users\\Zera\\Desktop\\FileExercise\\pdf.pdf");
+            document.Dispose();
 
             Console.ReadLine();
 
-
-
         }
-
+       
     }
 }
    
