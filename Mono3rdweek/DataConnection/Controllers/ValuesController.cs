@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace DataConnection.Controllers
@@ -13,7 +14,7 @@ namespace DataConnection.Controllers
         private static string connectionString = "Data Source=LAPTOP-1P438MBR;Initial Catalog=Hospital;Integrated Security=True";
 
         [HttpGet]
-        public HttpResponseMessage Get()
+        public async Task<HttpResponseMessage> GetAsync()
         {
             SqlConnection connection = new SqlConnection(connectionString);
             using (connection)
@@ -22,7 +23,7 @@ namespace DataConnection.Controllers
 
                 connection.Open();
 
-                SqlDataReader reader = command.ExecuteReader();
+                SqlDataReader reader = await command.ExecuteReaderAsync();
 
                 List<Patient> patients = new List<Patient>();
                 if (reader.HasRows)
@@ -50,7 +51,7 @@ namespace DataConnection.Controllers
 
         [Route("api/values/get-by-id/{id}")]
         [HttpGet]
-        public HttpResponseMessage Get(Guid id)
+        public async Task<HttpResponseMessage> GetAsync(Guid id)
         {
             SqlConnection connection = new SqlConnection(connectionString);
             using (connection)
@@ -60,7 +61,7 @@ namespace DataConnection.Controllers
 
                 connection.Open();
 
-                SqlDataReader reader = command.ExecuteReader();
+                SqlDataReader reader = await command.ExecuteReaderAsync();
 
                 Patient patient = new Patient();
                 if (reader.HasRows)
@@ -91,7 +92,7 @@ namespace DataConnection.Controllers
                 SqlCommand command = new SqlCommand("DELETE FROM Patient WHERE Id=@id;", connection);
                 command.Parameters.AddWithValue("@id", id);
                 connection.Open();
-                int numberOfAffectedRows = command.ExecuteNonQuery();
+                int numberOfAffectedRows =  command.ExecuteNonQuery();
                 if (numberOfAffectedRows > 0)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK,id);
