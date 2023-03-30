@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConnection.Repository.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConnection.Service.Common", "..\DataConnection.Service.Common\DataConnection.Service.Common.csproj", "{10520CED-E275-4AC4-A3D6-6154D00E7665}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConnection.DAL", "..\DataConnection.DAL\DataConnection.DAL.csproj", "{DE08E5E9-2DC9-4433-AC98-E24BB7EFE91A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{10520CED-E275-4AC4-A3D6-6154D00E7665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10520CED-E275-4AC4-A3D6-6154D00E7665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10520CED-E275-4AC4-A3D6-6154D00E7665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE08E5E9-2DC9-4433-AC98-E24BB7EFE91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE08E5E9-2DC9-4433-AC98-E24BB7EFE91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE08E5E9-2DC9-4433-AC98-E24BB7EFE91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE08E5E9-2DC9-4433-AC98-E24BB7EFE91A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -44,5 +44,15 @@
     <Compile Include="PatientModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataConnection.common\DataConnection.Common.csproj">
+      <Project>{3ebeecc4-538b-4b65-94bd-8ebdfd1c9f67}</Project>
+      <Name>DataConnection.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataConnection.Model.Common\DataConnection.Model.Common.csproj">
+      <Project>{321af3df-0952-4215-9351-2432658cd591}</Project>
+      <Name>DataConnection.Model.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{42417BB0-A804-44A3-AA16-33A4A4838708}</ProjectGuid>
+    <ProjectGuid>{DE08E5E9-2DC9-4433-AC98-E24BB7EFE91A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataConnectio.Repository</RootNamespace>
-    <AssemblyName>DataConnectio.Repository</AssemblyName>
+    <RootNamespace>DataConnection.DAL</RootNamespace>
+    <AssemblyName>DataConnection.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,18 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PatientRepository.cs" />
+    <Compile Include="Appointment.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="DepartmentAppointment.cs" />
+    <Compile Include="Doctor.cs" />
+    <Compile Include="Hospital.cs" />
+    <Compile Include="HospitalContext.cs" />
+    <Compile Include="Patient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataConnection.Model\DataConnection.Model.csproj">
-      <Project>{212080fe-ea72-4194-88c2-a4d7bd065005}</Project>
-      <Name>DataConnection.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataConnection.Repository.Common\DataConnection.Repository.Common.csproj">
-      <Project>{71247143-4125-4210-8eab-7dd616444b98}</Project>
-      <Name>DataConnection.Repository.Common</Name>
-    </ProjectReference>
+    <Compile Include="Salary.cs" />
+    <Compile Include="sysdiagram.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

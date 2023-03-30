@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.Sockets;
 using System.Web;
 
-namespace DataConnection.Models
+namespace DataConnection.WebApi.Models
 {
     public class Patient
     {
@@ -14,6 +16,10 @@ namespace DataConnection.Models
         public Guid CityId { get; set; }
         public string Illness { get; set; }
 
-        
+        public override string ToString()
+        {
+            return $"Id: {Id}\n Name: {Name}\nSurname: {Surname}\nDateOfBirth: {DateOfBirth}\nCityId: {CityId}";
+        }
+
     }
 }
