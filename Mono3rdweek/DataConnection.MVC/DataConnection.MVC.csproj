@@ -229,6 +229,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Patient\GetPatient.cshtml" />
+    <Content Include="Views\Patient\AddNewPatient.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -261,10 +262,6 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataConnectio.Repository\DataConnection.Repository.csproj">
-      <Project>{42417BB0-A804-44A3-AA16-33A4A4838708}</Project>
-      <Name>DataConnection.Repository</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DataConnection.common\DataConnection.Common.csproj">
       <Project>{3ebeecc4-538b-4b65-94bd-8ebdfd1c9f67}</Project>
       <Name>DataConnection.Common</Name>
@@ -284,6 +281,10 @@
     <ProjectReference Include="..\DataConnection.Repository.Common\DataConnection.Repository.Common.csproj">
       <Project>{71247143-4125-4210-8EAB-7DD616444B98}</Project>
       <Name>DataConnection.Repository.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataConnection.Repository\DataConnection.Repository.csproj">
+      <Project>{e85ebdf6-2bf9-4782-b268-8e3dbbe89d8c}</Project>
+      <Name>DataConnection.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataConnection.Service.Common\DataConnection.Service.Common.csproj">
       <Project>{10520CED-E275-4AC4-A3D6-6154D00E7665}</Project>

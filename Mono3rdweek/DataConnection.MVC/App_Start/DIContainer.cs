@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using Autofac;
 using Autofac.Integration.Mvc;
+using DataConnection.DAL;
 using DataConnection.Repository;
 using DataConnection.Repository.Common;
 using DataConnection.Service;
@@ -22,8 +23,9 @@ namespace DataConnection.MVC.App_Start
            
 
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
+            builder.RegisterType<EFPatientRepository>().As<IPatientRepository>();
             builder.RegisterType<PatientService>().As<IPatientService>();
-            builder.RegisterType<PatientRepository>().As<IPatientRepository>().InstancePerRequest();
+            builder.RegisterType<HospitalContext>().AsSelf().InstancePerLifetimeScope();
 
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));

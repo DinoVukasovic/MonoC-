@@ -12,29 +12,29 @@ namespace DataConnection.Service
 {
     public class PatientService : IPatientService
     {
-        protected IPatientRepository PatientRepository { get; set; }
+        protected IPatientRepository EFPatientRepository { get; set; }
 
         public PatientService(IPatientRepository patientRepository)
         {
-            PatientRepository = patientRepository;
+            EFPatientRepository = patientRepository;
         }
 
         public async Task<PatientModel> GetPatient(Guid id)
         {
-            PatientModel patientModel = await PatientRepository.GetPatient(id);
+            PatientModel patientModel = await EFPatientRepository.GetPatient(id);
 
             return patientModel;
         }
 
         public async Task<bool> AddNewPatient(PatientModel patient)
         {
-            bool isAdded = await PatientRepository.AddNewPatient(patient);
+            bool isAdded = await EFPatientRepository.AddNewPatient(patient);
             return isAdded;
         }
 
         public async Task<bool> EditPatient(Guid id, PatientModel patient)
         {
-            PatientModel patientCheck = await PatientRepository.GetPatient(id);
+            PatientModel patientCheck = await EFPatientRepository.GetPatient(id);
             if (patientCheck == null)
             {
                 return false;

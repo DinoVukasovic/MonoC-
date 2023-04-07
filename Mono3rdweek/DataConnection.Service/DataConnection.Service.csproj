@@ -45,10 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataConnectio.Repository\DataConnection.Repository.csproj">
-      <Project>{42417bb0-a804-44a3-aa16-33a4a4838708}</Project>
-      <Name>DataConnection.Repository</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DataConnection.Model.Common\DataConnection.Model.Common.csproj">
       <Project>{321af3df-0952-4215-9351-2432658cd591}</Project>
       <Name>DataConnection.Model.Common</Name>
